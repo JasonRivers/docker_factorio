@@ -1,12 +1,11 @@
 factorio:
-  image: skord/factorio:0.12.29
+  image: gameservers/factorio:latest
   environment:
     MODS_PATH: /opt/factorio/mods
     FP_USERNAME: ${fp_username}
     FP_PASSWORD: ${fp_password}
   ports:
     - 34197:34197/udp
-    - 80:80
   net: bridge
   volumes_from:
     - factorio-data
@@ -15,7 +14,7 @@ factorio:
     io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
 
 factorio-data:
-  image: skord/factorio:0.12.29
+  image: gameservers/factorio:0.12.29
   net: none
   volumes:
     - /opt/factorio/saves
