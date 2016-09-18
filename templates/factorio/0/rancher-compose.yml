@@ -1,6 +1,6 @@
 .catalog:
   name: Factorio Server
-  version: 0.0.1
+  version: 0.13.20
   description: |
     Factorio Server
   questions:
