@@ -1,6 +1,6 @@
 .catalog:
   name: Factorio Server
-  version: stable
+  version: experimental
   description: |
     Factorio Server
   questions:

@@ -2,7 +2,7 @@ factorio:
   image: gameservers/factorio:latest
   environment:
     MODS_PATH: /opt/factorio/mods
-    DOCKER_BUILD: stable
+    FACTORIO_BUILD: experimental
   ports:
     - 34197:34197/udp
   net: bridge
